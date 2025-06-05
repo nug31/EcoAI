@@ -138,7 +138,13 @@ export const performAIAnalysis = internalAction({
 
 ${args.userDescription ? `User description: ${args.userDescription}` : ''}
 
-Please respond in JSON format with fields: wasteType, description, recyclingTips, environmentalImpact, reuseIdeas`;
+Please respond in Indonesian language in JSON format with fields: wasteType, description, recyclingTips, environmentalImpact, reuseIdeas.
+
+Use these Indonesian terms:
+- For wasteType: use "plastik", "kertas", "kaca", "organik", "elektronik", "logam"
+- For recyclingTips: start with "Silakan periksa panduan daur ulang lokal untuk pembuangan yang tepat"
+- For reuseIdeas: start with "Pertimbangkan cara kreatif untuk menggunakan kembali item ini sebelum dibuang"
+- For environmentalImpact: mention "Pembuangan yang tidak tepat dapat merusak lingkungan"`;
 
     try {
       const response = await openai.chat.completions.create({

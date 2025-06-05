@@ -51,6 +51,13 @@ const translations = {
     reuseIdeas: "Reuse Ideas",
     environmentalImpact: "Environmental Impact",
     scanAnotherItem: "Scan Another Item",
+
+    // Waste Analysis Results
+    properDisposal: "Proper Disposal",
+    checkLocalGuidelines: "Please check local recycling guidelines for proper disposal",
+    creativeReuse: "Creative Reuse Ideas",
+    considerCreativeWays: "Consider creative ways to reuse this item before disposal",
+    improperDisposal: "Improper disposal can harm the environment",
     
     // Recycling Tips
     recyclingTipsTitle: "Recycling Tips & DIY Projects",
@@ -153,7 +160,14 @@ const translations = {
     reuseIdeas: "Ide Penggunaan Ulang",
     environmentalImpact: "Dampak Lingkungan",
     scanAnotherItem: "Pindai Item Lain",
-    
+
+    // Waste Analysis Results
+    properDisposal: "Pembuangan yang Tepat",
+    checkLocalGuidelines: "Silakan periksa panduan daur ulang lokal untuk pembuangan yang tepat",
+    creativeReuse: "Ide Penggunaan Ulang Kreatif",
+    considerCreativeWays: "Pertimbangkan cara kreatif untuk menggunakan kembali item ini sebelum dibuang",
+    improperDisposal: "Pembuangan yang tidak tepat dapat merusak lingkungan",
+
     // Recycling Tips
     recyclingTipsTitle: "Tips Daur Ulang & Proyek DIY",
     allTypes: "Semua Jenis",

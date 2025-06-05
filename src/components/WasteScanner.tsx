@@ -6,6 +6,22 @@ import { toast } from "sonner";
 
 export function WasteScanner() {
   const { t } = useLanguage();
+
+  // Helper function to translate common AI response texts
+  const translateAIText = (text: string): string => {
+    const translations: Record<string, string> = {
+      "paper": "kertas",
+      "plastic": "plastik",
+      "glass": "kaca",
+      "organic": "organik",
+      "electronic": "elektronik",
+      "metal": "logam",
+      "Please check local recycling guidelines for proper disposal": "Silakan periksa panduan daur ulang lokal untuk pembuangan yang tepat",
+      "Consider creative ways to reuse this item before disposal": "Pertimbangkan cara kreatif untuk menggunakan kembali item ini sebelum dibuang",
+      "Improper disposal can harm the environment": "Pembuangan yang tidak tepat dapat merusak lingkungan"
+    };
+    return translations[text] || text;
+  };
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
@@ -162,7 +178,7 @@ export function WasteScanner() {
                   <div>
                     <h4 className="font-medium text-gray-700 mb-1">{t('wasteType')}</h4>
                     <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
-                      {analysis.wasteType}
+                      {translateAIText(analysis.wasteType)}
                     </span>
                   </div>
 
@@ -173,20 +189,26 @@ export function WasteScanner() {
 
                   <div>
                     <h4 className="font-medium text-gray-700 mb-1">♻️ {t('recyclingTipsLabel')}</h4>
-                    <p className="text-gray-600 text-sm">{analysis.recyclingTips}</p>
+                    <p className="text-gray-600 text-sm">
+                      {translateAIText(analysis.recyclingTips)}
+                    </p>
                   </div>
 
                   {analysis.reuseIdeas && (
                     <div>
                       <h4 className="font-medium text-gray-700 mb-1">💡 {t('reuseIdeas')}</h4>
-                      <p className="text-gray-600 text-sm">{analysis.reuseIdeas}</p>
+                      <p className="text-gray-600 text-sm">
+                        {translateAIText(analysis.reuseIdeas)}
+                      </p>
                     </div>
                   )}
 
                   {analysis.environmentalImpact && (
                     <div>
                       <h4 className="font-medium text-gray-700 mb-1">🌍 {t('environmentalImpact')}</h4>
-                      <p className="text-gray-600 text-sm">{analysis.environmentalImpact}</p>
+                      <p className="text-gray-600 text-sm">
+                        {translateAIText(analysis.environmentalImpact)}
+                      </p>
                     </div>
                   )}
                 </div>
