@@ -1,13 +1,19 @@
 {
-  "name": "flex-template",
+  "name": "ecoai-smart-waste-management",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "description": "AI-powered smart waste management application with Indonesian localization",
   "scripts": {
     "dev": "npm-run-all --parallel dev:frontend dev:backend",
     "dev:frontend": "vite --open",
     "dev:backend": "convex dev",
-    "lint": "tsc -p convex -noEmit --pretty false && tsc -p . -noEmit --pretty false && convex dev --once && vite build"
+    "build": "tsc && vite build",
+    "build:convex": "convex deploy --cmd 'npm run build'",
+    "preview": "vite preview",
+    "lint": "tsc -p convex -noEmit --pretty false && tsc -p . -noEmit --pretty false && convex dev --once && vite build",
+    "type-check": "tsc --noEmit",
+    "deploy": "npm run build && netlify deploy --prod --dir=dist"
   },
   "dependencies": {
     "@convex-dev/auth": "^0.0.80",

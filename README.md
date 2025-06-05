@@ -85,6 +85,26 @@ npm run dev
 
 The app will be available at `http://localhost:5173`
 
+## 🚀 Deployment
+
+### Deploy to Netlify (Recommended)
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/nug31/EcoAI)
+
+1. **Click the "Deploy to Netlify" button above**
+2. **Connect your GitHub account** and authorize Netlify
+3. **Configure environment variables** in Netlify dashboard:
+   - `VITE_CONVEX_URL`: Your Convex deployment URL
+   - `OPENAI_API_KEY`: Your OpenAI API key (optional)
+4. **Deploy!** Your app will be live in minutes
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+### Other Deployment Options
+- **Vercel**: Import from GitHub and set environment variables
+- **Railway**: Connect GitHub repo and configure build settings
+- **Heroku**: Use the Node.js buildpack with build command `npm run build`
+
 ## 🔧 Configuration
 
 ### Convex Setup
