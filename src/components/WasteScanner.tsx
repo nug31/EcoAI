@@ -3,6 +3,7 @@ import { useMutation, useAction } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { useLanguage } from "../contexts/LanguageContext";
 import { toast } from "sonner";
+import { ARRecyclingAnimation } from "./ARRecyclingAnimation";
 
 export function WasteScanner() {
   const { t } = useLanguage();
@@ -27,7 +28,8 @@ export function WasteScanner() {
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [analysis, setAnalysis] = useState<any>(null);
   const [userDescription, setUserDescription] = useState("");
-  
+  const [showARAnimation, setShowARAnimation] = useState(false);
+
   const fileInputRef = useRef<HTMLInputElement>(null);
   const generateUploadUrl = useMutation(api.wasteManagement.generateUploadUrl);
   const analyzeWaste = useAction(api.wasteManagement.analyzeWaste);
@@ -85,6 +87,7 @@ export function WasteScanner() {
     setPreviewUrl(null);
     setAnalysis(null);
     setUserDescription("");
+    setShowARAnimation(false);
     if (fileInputRef.current) {
       fileInputRef.current.value = "";
     }
@@ -213,12 +216,32 @@ export function WasteScanner() {
                   )}
                 </div>
 
-                <button
-                  onClick={resetScanner}
-                  className="w-full bg-blue-500 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-600 transition-colors"
-                >
-                  {t('scanAnotherItem')}
-                </button>
+                <div className="flex gap-3">
+                  <button
+                    onClick={() => setShowARAnimation(!showARAnimation)}
+                    className="flex-1 bg-gradient-to-r from-purple-500 to-blue-500 text-white py-2 px-4 rounded-lg font-medium hover:from-purple-600 hover:to-blue-600 transition-all duration-200"
+                  >
+                    🔬 {t('scanAndLearn')}
+                  </button>
+                  <button
+                    onClick={resetScanner}
+                    className="flex-1 bg-blue-500 text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-600 transition-colors"
+                  >
+                    {t('scanAnotherItem')}
+                  </button>
+                </div>
+              </div>
+            )}
+
+            {/* AR Recycling Animation */}
+            {analysis && showARAnimation && (
+              <div className="mt-6">
+                <ARRecyclingAnimation
+                  wasteType={translateAIText(analysis.wasteType).toLowerCase()}
+                  onComplete={() => {
+                    toast.success("🎉 " + t('learningComplete'));
+                  }}
+                />
               </div>
             )}
           </div>

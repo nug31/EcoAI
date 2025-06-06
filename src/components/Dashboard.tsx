@@ -1,9 +1,14 @@
 import { useQuery, useMutation } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import { useLanguage } from "../contexts/LanguageContext";
+import { ScanAndLearnFeature } from "./ScanAndLearnFeature";
 import { useEffect } from "react";
 
-export function Dashboard() {
+interface DashboardProps {
+  onNavigate?: (tab: string) => void;
+}
+
+export function Dashboard({ onNavigate }: DashboardProps) {
   const { t } = useLanguage();
   const userProfile = useQuery(api.wasteManagement.getUserProfile);
   const recentWasteItems = useQuery(api.wasteManagement.getUserWasteItems, { limit: 5 });
@@ -89,6 +94,11 @@ export function Dashboard() {
           </div>
         </div>
       </div>
+
+      {/* Scan & Learn Feature */}
+      <ScanAndLearnFeature
+        onStartScan={() => onNavigate?.('scanner')}
+      />
 
       {/* Recent Activity */}
       <div className="bg-white rounded-lg shadow-sm border">

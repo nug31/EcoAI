@@ -100,7 +100,7 @@ function AppContent() {
             </div>
 
             {/* Tab Content */}
-            {activeTab === "dashboard" && <Dashboard />}
+            {activeTab === "dashboard" && <Dashboard onNavigate={setActiveTab} />}
             {activeTab === "scanner" && <WasteScanner />}
             {activeTab === "tips" && <RecyclingTips />}
             {activeTab === "leaderboard" && <Leaderboard />}

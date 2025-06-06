@@ -52,6 +52,61 @@ const translations = {
     environmentalImpact: "Environmental Impact",
     scanAnotherItem: "Scan Another Item",
 
+    // AR Recycling Animation
+    scanAndLearn: "Scan & Learn",
+    watchRecyclingProcess: "Watch how this waste is recycled into new products",
+    step: "Step",
+    startAnimation: "Start Animation",
+    stopAnimation: "Stop Animation",
+    didYouKnow: "Did You Know?",
+    learningComplete: "Learning complete! You've discovered the recycling process!",
+    scanAndLearnDescription: "Scan waste items and watch interactive AR animations showing how they're recycled into new products",
+    scanWasteItems: "Scan waste items",
+    watchARAnimation: "Watch AR animations",
+    learnRecyclingProcess: "Learn recycling process",
+    startScanning: "Start Scanning",
+    tryScanning: "Try scanning",
+
+    // Recycling Process Steps
+    collection: "Collection",
+    sorting: "Sorting",
+    cleaning: "Cleaning",
+    shredding: "Shredding",
+    melting: "Melting",
+    pulping: "Pulping",
+    bleaching: "Bleaching",
+    forming: "Forming",
+    crushing: "Crushing",
+    molding: "Molding",
+    newProduct: "New Product",
+
+    // Plastic Process
+    plasticCollection: "Plastic bottles are collected from recycling bins",
+    plasticSorting: "Bottles are sorted by type and color",
+    plasticCleaning: "Labels and caps are removed, bottles are washed",
+    plasticShredding: "Clean bottles are shredded into small flakes",
+    plasticMelting: "Flakes are melted and formed into pellets",
+    plasticToClothing: "Pellets are spun into fibers for clothing",
+    plasticFact: "One plastic bottle can be recycled into enough fiber for one t-shirt!",
+
+    // Paper Process
+    paperCollection: "Used paper is collected and transported",
+    paperPulping: "Paper is mixed with water to create pulp",
+    paperCleaning: "Ink and contaminants are removed from pulp",
+    paperBleaching: "Pulp is bleached to achieve desired whiteness",
+    paperForming: "Clean pulp is formed into new paper sheets",
+    paperToNewPaper: "New recycled paper is ready for use",
+    paperFact: "Recycling one ton of paper saves 17 trees and 7,000 gallons of water!",
+
+    // Glass Process
+    glassCollection: "Glass containers are collected and sorted",
+    glassSorting: "Glass is sorted by color (clear, brown, green)",
+    glassCrushing: "Sorted glass is crushed into small pieces called cullet",
+    glassMelting: "Cullet is melted in furnaces at 1500°C",
+    glassMolding: "Molten glass is shaped into new containers",
+    glassToNewBottle: "New glass bottles are ready for use",
+    glassFact: "Glass can be recycled infinitely without losing quality!",
+
     // Waste Analysis Results
     properDisposal: "Proper Disposal",
     checkLocalGuidelines: "Please check local recycling guidelines for proper disposal",
@@ -160,6 +215,61 @@ const translations = {
     reuseIdeas: "Ide Penggunaan Ulang",
     environmentalImpact: "Dampak Lingkungan",
     scanAnotherItem: "Pindai Item Lain",
+
+    // AR Recycling Animation
+    scanAndLearn: "Pindai & Pelajari",
+    watchRecyclingProcess: "Saksikan bagaimana sampah ini didaur ulang menjadi produk baru",
+    step: "Langkah",
+    startAnimation: "Mulai Animasi",
+    stopAnimation: "Hentikan Animasi",
+    didYouKnow: "Tahukah Anda?",
+    learningComplete: "Pembelajaran selesai! Anda telah mempelajari proses daur ulang!",
+    scanAndLearnDescription: "Pindai sampah dan saksikan animasi AR interaktif yang menunjukkan bagaimana sampah didaur ulang menjadi produk baru",
+    scanWasteItems: "Pindai sampah",
+    watchARAnimation: "Tonton animasi AR",
+    learnRecyclingProcess: "Pelajari proses daur ulang",
+    startScanning: "Mulai Memindai",
+    tryScanning: "Coba pindai",
+
+    // Recycling Process Steps
+    collection: "Pengumpulan",
+    sorting: "Pemilahan",
+    cleaning: "Pembersihan",
+    shredding: "Pencacahan",
+    melting: "Peleburan",
+    pulping: "Pembuatan Pulp",
+    bleaching: "Pemutihan",
+    forming: "Pembentukan",
+    crushing: "Penghancuran",
+    molding: "Pencetakan",
+    newProduct: "Produk Baru",
+
+    // Plastic Process
+    plasticCollection: "Botol plastik dikumpulkan dari tempat sampah daur ulang",
+    plasticSorting: "Botol dipilah berdasarkan jenis dan warna",
+    plasticCleaning: "Label dan tutup dilepas, botol dicuci bersih",
+    plasticShredding: "Botol bersih dicacah menjadi serpihan kecil",
+    plasticMelting: "Serpihan dilebur dan dibentuk menjadi pelet",
+    plasticToClothing: "Pelet dipintal menjadi serat untuk pakaian",
+    plasticFact: "Satu botol plastik dapat didaur ulang menjadi serat yang cukup untuk satu kaos!",
+
+    // Paper Process
+    paperCollection: "Kertas bekas dikumpulkan dan diangkut",
+    paperPulping: "Kertas dicampur dengan air untuk membuat pulp",
+    paperCleaning: "Tinta dan kontaminan dipisahkan dari pulp",
+    paperBleaching: "Pulp diputihkan untuk mencapai tingkat putih yang diinginkan",
+    paperForming: "Pulp bersih dibentuk menjadi lembaran kertas baru",
+    paperToNewPaper: "Kertas daur ulang baru siap digunakan",
+    paperFact: "Mendaur ulang satu ton kertas menghemat 17 pohon dan 26.000 liter air!",
+
+    // Glass Process
+    glassCollection: "Wadah kaca dikumpulkan dan dipilah",
+    glassSorting: "Kaca dipilah berdasarkan warna (bening, coklat, hijau)",
+    glassCrushing: "Kaca yang sudah dipilah dihancurkan menjadi potongan kecil",
+    glassMelting: "Potongan kaca dilebur dalam tungku pada suhu 1500°C",
+    glassMolding: "Kaca cair dibentuk menjadi wadah baru",
+    glassToNewBottle: "Botol kaca baru siap digunakan",
+    glassFact: "Kaca dapat didaur ulang tanpa batas tanpa kehilangan kualitas!",
 
     // Waste Analysis Results
     properDisposal: "Pembuangan yang Tepat",
