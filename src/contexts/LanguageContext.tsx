@@ -78,6 +78,14 @@ const translations = {
     forming: "Forming",
     crushing: "Crushing",
     molding: "Molding",
+    composting: "Composting",
+    decomposition: "Decomposition",
+    maturation: "Maturation",
+    dataWiping: "Data Wiping",
+    disassembly: "Disassembly",
+    materialSeparation: "Material Separation",
+    refining: "Refining",
+    purification: "Purification",
     newProduct: "New Product",
 
     // Plastic Process
@@ -106,6 +114,33 @@ const translations = {
     glassMolding: "Molten glass is shaped into new containers",
     glassToNewBottle: "New glass bottles are ready for use",
     glassFact: "Glass can be recycled infinitely without losing quality!",
+
+    // Organic Process
+    organicCollection: "Organic waste like leaves and food scraps are collected",
+    organicSorting: "Organic materials are sorted and contamination removed",
+    organicComposting: "Materials are placed in composting bins with proper aeration",
+    organicDecomposition: "Microorganisms break down organic matter naturally",
+    organicMaturation: "Compost matures over 3-6 months with regular turning",
+    organicToCompost: "Rich, nutrient-dense compost is ready for gardens",
+    organicFact: "Composting reduces waste by 30% and creates valuable soil amendment!",
+
+    // Electronic Process
+    electronicCollection: "Electronic devices are collected at certified centers",
+    electronicDataWiping: "All personal data is securely wiped from devices",
+    electronicDisassembly: "Devices are carefully disassembled by specialists",
+    electronicMaterialSeparation: "Valuable metals and components are separated",
+    electronicRefining: "Materials are refined and purified for reuse",
+    electronicToNewDevice: "Recycled materials become new electronic devices",
+    electronicFact: "One smartphone contains over 40 different precious metals!",
+
+    // Metal Process
+    metalCollection: "Metal cans and objects are collected and transported",
+    metalSorting: "Metals are sorted by type using magnetic separation",
+    metalCleaning: "Labels, paint, and contaminants are removed",
+    metalMelting: "Clean metal is melted in high-temperature furnaces",
+    metalPurification: "Molten metal is purified and formed into ingots",
+    metalToNewProduct: "Recycled metal becomes new cans, cars, and buildings",
+    metalFact: "Aluminum cans can be recycled infinitely and back on shelves in 60 days!",
 
     // Waste Analysis Results
     properDisposal: "Proper Disposal",
@@ -242,6 +277,14 @@ const translations = {
     forming: "Pembentukan",
     crushing: "Penghancuran",
     molding: "Pencetakan",
+    composting: "Pengomposan",
+    decomposition: "Penguraian",
+    maturation: "Pematangan",
+    dataWiping: "Penghapusan Data",
+    disassembly: "Pembongkaran",
+    materialSeparation: "Pemisahan Material",
+    refining: "Pemurnian",
+    purification: "Penyulingan",
     newProduct: "Produk Baru",
 
     // Plastic Process
@@ -270,6 +313,33 @@ const translations = {
     glassMolding: "Kaca cair dibentuk menjadi wadah baru",
     glassToNewBottle: "Botol kaca baru siap digunakan",
     glassFact: "Kaca dapat didaur ulang tanpa batas tanpa kehilangan kualitas!",
+
+    // Organic Process
+    organicCollection: "Sampah organik seperti daun dan sisa makanan dikumpulkan",
+    organicSorting: "Material organik dipilah dan kontaminasi dipisahkan",
+    organicComposting: "Material ditempatkan di tempat kompos dengan aerasi yang baik",
+    organicDecomposition: "Mikroorganisme mengurai bahan organik secara alami",
+    organicMaturation: "Kompos matang selama 3-6 bulan dengan pembalikan rutin",
+    organicToCompost: "Kompos kaya nutrisi siap untuk kebun",
+    organicFact: "Pengomposan mengurangi sampah 30% dan menciptakan pupuk alami yang berharga!",
+
+    // Electronic Process
+    electronicCollection: "Perangkat elektronik dikumpulkan di pusat bersertifikat",
+    electronicDataWiping: "Semua data pribadi dihapus secara aman dari perangkat",
+    electronicDisassembly: "Perangkat dibongkar dengan hati-hati oleh spesialis",
+    electronicMaterialSeparation: "Logam berharga dan komponen dipisahkan",
+    electronicRefining: "Material dimurnikan dan diolah untuk digunakan kembali",
+    electronicToNewDevice: "Material daur ulang menjadi perangkat elektronik baru",
+    electronicFact: "Satu smartphone mengandung lebih dari 40 jenis logam mulia!",
+
+    // Metal Process
+    metalCollection: "Kaleng logam dan objek dikumpulkan dan diangkut",
+    metalSorting: "Logam dipilah berdasarkan jenis menggunakan pemisahan magnetik",
+    metalCleaning: "Label, cat, dan kontaminan dilepas",
+    metalMelting: "Logam bersih dilebur dalam tungku bersuhu tinggi",
+    metalPurification: "Logam cair dimurnikan dan dibentuk menjadi batangan",
+    metalToNewProduct: "Logam daur ulang menjadi kaleng, mobil, dan bangunan baru",
+    metalFact: "Kaleng aluminium dapat didaur ulang tanpa batas dan kembali ke rak dalam 60 hari!",
 
     // Waste Analysis Results
     properDisposal: "Pembuangan yang Tepat",

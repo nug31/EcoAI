@@ -23,6 +23,27 @@ export function WasteScanner() {
     };
     return translations[text] || text;
   };
+
+  // Helper function to normalize waste type for AR animation
+  const normalizeWasteType = (wasteType: string): string => {
+    const normalized = translateAIText(wasteType.toLowerCase());
+    // Map variations to standard types
+    const typeMapping: Record<string, string> = {
+      "kertas": "paper",
+      "plastik": "plastic",
+      "kaca": "glass",
+      "organik": "organic",
+      "elektronik": "electronic",
+      "logam": "metal",
+      "paper": "paper",
+      "plastic": "plastic",
+      "glass": "glass",
+      "organic": "organic",
+      "electronic": "electronic",
+      "metal": "metal"
+    };
+    return typeMapping[normalized] || "plastic"; // fallback to plastic
+  };
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [isAnalyzing, setIsAnalyzing] = useState(false);
@@ -237,7 +258,7 @@ export function WasteScanner() {
             {analysis && showARAnimation && (
               <div className="mt-6">
                 <ARRecyclingAnimation
-                  wasteType={translateAIText(analysis.wasteType).toLowerCase()}
+                  wasteType={normalizeWasteType(analysis.wasteType)}
                   onComplete={() => {
                     toast.success("🎉 " + t('learningComplete'));
                   }}

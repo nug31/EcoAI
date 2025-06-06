@@ -153,6 +153,138 @@ export function ARRecyclingAnimation({ wasteType, onComplete }: ARRecyclingAnima
         icon: "🍾",
         duration: 2000
       }
+    ],
+    organic: [
+      {
+        id: 1,
+        title: t('collection'),
+        description: t('organicCollection'),
+        icon: "🍂",
+        duration: 2000
+      },
+      {
+        id: 2,
+        title: t('sorting'),
+        description: t('organicSorting'),
+        icon: "🗂️",
+        duration: 2000
+      },
+      {
+        id: 3,
+        title: t('composting'),
+        description: t('organicComposting'),
+        icon: "🌱",
+        duration: 2000
+      },
+      {
+        id: 4,
+        title: t('decomposition'),
+        description: t('organicDecomposition'),
+        icon: "🦠",
+        duration: 2000
+      },
+      {
+        id: 5,
+        title: t('maturation'),
+        description: t('organicMaturation'),
+        icon: "⏰",
+        duration: 2000
+      },
+      {
+        id: 6,
+        title: t('newProduct'),
+        description: t('organicToCompost'),
+        icon: "🌿",
+        duration: 2000
+      }
+    ],
+    electronic: [
+      {
+        id: 1,
+        title: t('collection'),
+        description: t('electronicCollection'),
+        icon: "📱",
+        duration: 2000
+      },
+      {
+        id: 2,
+        title: t('dataWiping'),
+        description: t('electronicDataWiping'),
+        icon: "🔒",
+        duration: 2000
+      },
+      {
+        id: 3,
+        title: t('disassembly'),
+        description: t('electronicDisassembly'),
+        icon: "🔧",
+        duration: 2000
+      },
+      {
+        id: 4,
+        title: t('materialSeparation'),
+        description: t('electronicMaterialSeparation'),
+        icon: "⚡",
+        duration: 2000
+      },
+      {
+        id: 5,
+        title: t('refining'),
+        description: t('electronicRefining'),
+        icon: "✨",
+        duration: 2000
+      },
+      {
+        id: 6,
+        title: t('newProduct'),
+        description: t('electronicToNewDevice'),
+        icon: "💻",
+        duration: 2000
+      }
+    ],
+    metal: [
+      {
+        id: 1,
+        title: t('collection'),
+        description: t('metalCollection'),
+        icon: "🥫",
+        duration: 2000
+      },
+      {
+        id: 2,
+        title: t('sorting'),
+        description: t('metalSorting'),
+        icon: "🧲",
+        duration: 2000
+      },
+      {
+        id: 3,
+        title: t('cleaning'),
+        description: t('metalCleaning'),
+        icon: "🧽",
+        duration: 2000
+      },
+      {
+        id: 4,
+        title: t('melting'),
+        description: t('metalMelting'),
+        icon: "🔥",
+        duration: 2000
+      },
+      {
+        id: 5,
+        title: t('purification'),
+        description: t('metalPurification'),
+        icon: "💧",
+        duration: 2000
+      },
+      {
+        id: 6,
+        title: t('newProduct'),
+        description: t('metalToNewProduct'),
+        icon: "🏗️",
+        duration: 2000
+      }
     ]
   };
 
@@ -298,6 +430,9 @@ export function ARRecyclingAnimation({ wasteType, onComplete }: ARRecyclingAnima
           {wasteType === 'plastic' && t('plasticFact')}
           {wasteType === 'paper' && t('paperFact')}
           {wasteType === 'glass' && t('glassFact')}
+          {wasteType === 'organic' && t('organicFact')}
+          {wasteType === 'electronic' && t('electronicFact')}
+          {wasteType === 'metal' && t('metalFact')}
         </p>
       </div>
     </div>
