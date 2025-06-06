@@ -61,10 +61,10 @@ const translations = {
     didYouKnow: "Did You Know?",
     learningComplete: "Learning complete! You've discovered the recycling process!",
     scanAndLearnDescription: "Scan waste items and watch interactive AR animations showing how they're recycled into new products",
-    scanWasteItems: "Scan waste items",
+    scanWasteItemsAR: "Scan waste items",
     watchARAnimation: "Watch AR animations",
     learnRecyclingProcess: "Learn recycling process",
-    startScanning: "Start Scanning",
+    startScanningAR: "Start Scanning",
     tryScanning: "Try scanning",
 
     // Recycling Process Steps
@@ -225,10 +225,10 @@ const translations = {
     didYouKnow: "Tahukah Anda?",
     learningComplete: "Pembelajaran selesai! Anda telah mempelajari proses daur ulang!",
     scanAndLearnDescription: "Pindai sampah dan saksikan animasi AR interaktif yang menunjukkan bagaimana sampah didaur ulang menjadi produk baru",
-    scanWasteItems: "Pindai sampah",
+    scanWasteItemsAR: "Pindai sampah",
     watchARAnimation: "Tonton animasi AR",
     learnRecyclingProcess: "Pelajari proses daur ulang",
-    startScanning: "Mulai Memindai",
+    startScanningAR: "Mulai Memindai",
     tryScanning: "Coba pindai",
 
     // Recycling Process Steps

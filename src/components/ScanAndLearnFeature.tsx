@@ -44,7 +44,7 @@ export function ScanAndLearnFeature({ onStartScan }: ScanAndLearnFeatureProps) {
         <div className="space-y-2 mb-6">
           <div className="flex items-center justify-center gap-2 text-sm text-gray-700">
             <span className="text-purple-500">📱</span>
-            <span>{t('scanWasteItems')}</span>
+            <span>{t('scanWasteItemsAR')}</span>
           </div>
           <div className="flex items-center justify-center gap-2 text-sm text-gray-700">
             <span className="text-blue-500">🎬</span>
@@ -61,7 +61,7 @@ export function ScanAndLearnFeature({ onStartScan }: ScanAndLearnFeatureProps) {
           onClick={onStartScan}
           className="w-full bg-gradient-to-r from-purple-500 to-blue-500 text-white py-3 px-6 rounded-lg font-medium hover:from-purple-600 hover:to-blue-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105"
         >
-          🚀 {t('startScanning')}
+          🚀 {t('startScanningAR')}
         </button>
 
         {/* Example Items */}
